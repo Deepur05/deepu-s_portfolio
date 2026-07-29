@@ -1295,8 +1295,9 @@ body {
 
 /* Resume Modal Specifics */
 .resume-modal-content {
-  max-width: 800px;
+  max-width: 850px;
   background: #0d1322;
+  padding: 1.5rem;
 }
 
 .resume-preview-wrapper {
@@ -1304,55 +1305,26 @@ body {
   font-family: var(--font-body);
 }
 
-.resume-header h2 {
-  font-family: var(--font-heading);
-  font-size: 2rem;
-  color: var(--primary-cyan);
+.resume-embed-container {
+  width: 100%;
+  height: 70vh;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid var(--border-color);
 }
 
-.resume-header p {
-  color: var(--text-muted);
-  font-size: 0.9rem;
-}
-
-.resume-divider {
-  border: 0;
-  height: 1px;
-  background: var(--border-color);
-  margin: 1rem 0 1.5rem 0;
-}
-
-.resume-section {
-  margin-bottom: 1.5rem;
-}
-
-.resume-section h3 {
-  font-family: var(--font-heading);
-  font-size: 1.1rem;
-  color: var(--primary-cyan);
-  border-bottom: 1px solid rgba(0, 242, 254, 0.2);
-  padding-bottom: 0.3rem;
-  margin-bottom: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.resume-section p, .resume-section ul {
-  font-size: 0.9rem;
-  color: var(--text-muted);
-}
-
-.resume-section ul {
-  padding-left: 1.2rem;
-}
-
-.resume-section li {
-  margin-bottom: 0.3rem;
+.resume-embed {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 .resume-actions {
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: right;
+  display: flex;
+  gap: 0.8rem;
+  justify-content: flex-end;
 }
 
 /* ==========================================================================

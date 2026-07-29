@@ -310,14 +310,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 6. RESUME MODAL
   const resumeModal = document.getElementById('resume-modal');
-  const openResumeBtn = document.getElementById('open-resume-btn');
   const resumeModalClose = document.getElementById('resume-modal-close');
-
-  if (openResumeBtn && resumeModal) {
-    openResumeBtn.addEventListener('click', () => {
-      resumeModal.classList.add('active');
-    });
-  }
 
   if (resumeModalClose && resumeModal) {
     resumeModalClose.addEventListener('click', () => {
