@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deepu R | Computer Science (AI) & Robotics Engineer</title>
+  <meta name="description"
+    content="Portfolio of Deepu R - B.Tech Computer Science (AI) student specializing in Embedded Systems, C++, Python, and Autonomous Robotics." />
+  <meta name="keywords"
+    content="Deepu R, Robotics Engineer, Embedded Systems, C++, Python, AI, Software Engineer Portfolio, Arduino, Pathanamthitta" />
+  <meta name="author" content="Deepu R" />
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Deepu R | CS (AI) & Robotics Software Engineer" />
+  <meta property="og:description" content="Embedded systems and robotics projects engineered with C++ and Python." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Canvas Background Animation -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-header" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <i class="fa-solid fa-terminal nav-logo-icon"></i> Deepu R
+      </a>
+
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-gear"></i> About</a></li>
+          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Experience</a></li>
+          <li><a href="#projects" class="nav-link"><i class="fa-solid fa-microchip"></i> Projects</a></li>
+          <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-hire">
+          <i class="fa-solid fa-paper-plane"></i> Hire Me
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span> Available for Internships & Full-Time Roles
+          </div>
+
+          <div class="hero-name-row">
+            <div class="hero-name-text">
+              <span class="hero-greeting">Hi, I'm</span>
+              <h1 class="hero-title">
+                <span class="first-name-text">DEEPU</span>
+                <span class="last-name-badge">R</span>
+              </h1>
+            </div>
+          </div>
+
+          <h2 class="hero-subtitle">
+            <span class="typing-prefix">I'm </span>
+            <span class="typing-text" id="typing-element"></span>
+            <span class="typing-cursor">|</span>
+          </h2>
+
+          <p class="hero-description">
+            B.Tech Computer Science (AI) student with hands-on experience building embedded systems and robotics
+            projects using <strong>C++</strong> and <strong>Python</strong>. Strong foundation in DSA, algorithms, and
+            hardware-software integration.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              <i class="fa-solid fa-paper-plane"></i> Hire Me Now
+            </a>
+            <a href="#projects" class="btn btn-secondary btn-lg">
+              <i class="fa-solid fa-layer-group"></i> Explore Projects
+            </a>
+            <button class="btn btn-outline btn-lg" id="open-resume-btn">
+              <i class="fa-solid fa-file-pdf"></i> Resume
+            </button>
+          </div>
+
+          <div class="hero-meta">
+            <div class="meta-item">
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+918547191991">+91 8547191991</a>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Pathanamthitta, Kerala, India</span>
+            </div>
+            <div class="meta-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:deepurajesh34@gmail.com">deepurajesh34@gmail.com</a>
+            </div>
+            <div class="meta-item">
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://linkedin.com/in/deepur-717941286" target="_blank"
+                rel="noopener">linkedin.com/in/deepur-717941286</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual-simple">
+          <div class="hero-profile-pic">
+            <img src="assets/Screenshot_2025-09-15-22-37-06-703_com.miui.gallery.png" alt="Deepu R" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">OVERVIEW</span>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card main-about">
+            <div class="about-icon">
+              <i class="fa-solid fa-user-astronaut"></i>
+            </div>
+            <h3>Passionate Systems & Robotics Developer</h3>
+            <p>
+              I am a B.Tech Computer Science student specializing in Artificial Intelligence at Providence College of
+              Engineering (KTU). My passion lies at the intersection of software engineering and physical hardware.
+            </p>
+            <p>
+              With a solid background in <strong>Data Structures & Algorithms</strong> and <strong>Object-Oriented
+                Programming</strong>, I enjoy taking complex algorithmic concepts and turning them into real-world,
+              working, tested physical systems—from autonomous soccer bots to precision CNC motion-planning machines.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Bridge between software logic & physical hardware</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Experienced in real-time multi-sensor integration</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fa-solid fa-check-circle"></i>
+                <span>Driven problem solver with cross-functional teamwork mindset</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card stats-card">
+            <h3>Quick Highlights</h3>
+            <div class="stats-grid">
+              <div class="stat-box">
+                <span class="stat-number">2027</span>
+                <span class="stat-label">Expected B.Tech CS (AI)</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">3+</span>
+                <span class="stat-label">Core Embedded Projects</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">C++ & Python</span>
+                <span class="stat-label">Primary Languages</span>
+              </div>
+              <div class="stat-box">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Commitment to Code Quality</span>
+              </div>
+            </div>
+            <div class="hire-callout">
+              <h4>Ready to contribute to your team!</h4>
+              <p>Seeking Software Engineering internship and full-time positions.</p>
+              <a href="#contact" class="btn btn-primary btn-sm"><i class="fa-solid fa-handshake"></i> Let's Talk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS & EXPERTISE SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">CAPABILITIES</span>
+          <h2 class="section-title">Technical Skills & Expertise</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-cyan">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3>Programming Languages</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">C++</span>
+                  <span class="skill-pct">Advanced</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Python</span>
+                  <span class="skill-pct">Proficient</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Embedded C</span>
+                  <span class="skill-pct">Proficient</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core CS -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-purple">
+                <i class="fa-solid fa-microchip"></i>
+              </div>
+              <h3>Core Computer Science</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Data Structures & Algorithms</span>
+                  <span class="skill-pct">Strong</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Object-Oriented Programming (OOP)</span>
+                  <span class="skill-pct">Advanced</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 92%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Problem Solving & Logic</span>
+                  <span class="skill-pct">Advanced</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Robotics & Embedded -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-blue">
+                <i class="fa-solid fa-gear"></i>
+              </div>
+              <h3>Robotics & Embedded Systems</h3>
+            </div>
+            <div class="skills-list">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Arduino Microcontrollers</span>
+                  <span class="skill-pct">Hands-on</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 92%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Multi-Sensor Integration</span>
+                  <span class="skill-pct">Hands-on</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 88%;"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span class="skill-name">Motor Control & Motion Logic</span>
+                  <span class="skill-pct">Advanced</span>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Other Skills & Tools -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-amber">
+                <i class="fa-solid fa-wrench"></i>
+              </div>
+              <h3>Tools & Professional Traits</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="tag"><i class="fa-brands fa-git-alt"></i> Git & GitHub</span>
+              <span class="tag"><i class="fa-solid fa-magnifying-glass"></i> Analytical Thinking</span>
+              <span class="tag"><i class="fa-solid fa-users"></i> Team Collaboration</span>
+              <span class="tag"><i class="fa-solid fa-bug"></i> Debugging & Testing</span>
+              <span class="tag"><i class="fa-solid fa-compass-drafting"></i> Motion Planning</span>
+              <span class="tag"><i class="fa-solid fa-shapes"></i> Coordinate Geometry</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">CAREER HISTORY</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="company-title">Embedded Systems Intern</h3>
+                  <h4 class="company-name">TechMaghi <span class="location"><i class="fa-solid fa-location-dot"></i>
+                      Kochi, India</span></h4>
+                </div>
+                <span class="timeline-date"><i class="fa-solid fa-calendar"></i> June 2026</span>
+              </div>
+
+              <ul class="experience-list">
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <span>Built a <strong>wireless robotic car</strong> using Arduino-based embedded systems and
+                    multi-sensor integration for real-time obstacle detection.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <span>Programmed motor control logic in <strong>C/C++</strong> enabling smooth remote navigation and
+                    autonomous obstacle avoidance response.</span>
+                </li>
+                <li>
+                  <i class="fa-solid fa-caret-right"></i>
+                  <span>Collaborated closely with a cross-functional technical team to test, debug, and refine the
+                    embedded control system, boosting navigation reliability.</span>
+                </li>
+              </ul>
+
+              <div class="tech-stack-badges">
+                <span class="tech-badge">Arduino</span>
+                <span class="tech-badge">C/C++</span>
+                <span class="tech-badge">Ultrasonic Sensors</span>
+                <span class="tech-badge">Motor Drivers</span>
+                <span class="tech-badge">Embedded Debugging</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">PORTFOLIO</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="project-filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="robotics">Robotics</button>
+          <button class="filter-btn" data-filter="embedded">Embedded Systems</button>
+          <button class="filter-btn" data-filter="cnc">Motion Control</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: Autonomous Soccer Robot -->
+          <div class="project-card" data-category="robotics">
+            <div class="project-img-wrapper">
+              <img src="assets/soccer_robot.png" alt="Autonomous Soccer Robot" class="project-img" />
+              <span class="project-tag">Completed</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Autonomous Soccer Robot</h3>
+              <p class="project-desc">
+                Personal Project involving movement control and automation logic for a robot capable of coordinated,
+                autonomous play on field.
+              </p>
+              <div class="project-tech">
+                <span>C++</span>
+                <span>Robotics Hardware</span>
+                <span>Real-Time Control</span>
+              </div>
+              <button class="btn btn-outline btn-sm open-modal-btn" data-project="soccer">
+                <i class="fa-solid fa-circle-info"></i> View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 2: Automatic Drawing Machine -->
+          <div class="project-card" data-category="cnc">
+            <div class="project-img-wrapper">
+              <img src="assets/drawing_machine.png" alt="Automatic Drawing Machine" class="project-img" />
+              <span class="project-tag tag-progress">In Progress</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Automatic Drawing Machine</h3>
+              <p class="project-desc">
+                CNC-style machine converting digital image inputs into precise physical vector drawings by coupling
+                robotics hardware with custom software.
+              </p>
+              <div class="project-tech">
+                <span>Coordinate Geometry</span>
+                <span>Motion Planning</span>
+                <span>C++/Python</span>
+              </div>
+              <button class="btn btn-outline btn-sm open-modal-btn" data-project="drawing">
+                <i class="fa-solid fa-circle-info"></i> View Details
+              </button>
+            </div>
+          </div>
+
+          <!-- Project 3: Wireless Robotic Car -->
+          <div class="project-card" data-category="embedded">
+            <div class="project-img-wrapper">
+              <img src="assets/robotic_car.png" alt="Wireless Robotic Car" class="project-img" />
+              <span class="project-tag">Completed</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Wireless Obstacle Robotic Car</h3>
+              <p class="project-desc">
+                Arduino-based multi-sensor robotic car designed at TechMaghi Internship featuring real-time obstacle
+                avoidance and wireless control.
+              </p>
+              <div class="project-tech">
+                <span>Arduino</span>
+                <span>Sensor Integration</span>
+                <span>Motor Control Logic</span>
+              </div>
+              <button class="btn btn-outline btn-sm open-modal-btn" data-project="car">
+                <i class="fa-solid fa-circle-info"></i> View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & LEADERSHIP SECTION -->
+    <section class="section edu-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">BACKGROUND</span>
+          <h2 class="section-title">Education & Leadership</h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="edu-grid">
+          <!-- Education Card -->
+          <div class="glass-card edu-card">
+            <div class="edu-icon">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <span class="badge-year">Expected 2027</span>
+            <h3>Bachelor of Engineering</h3>
+            <h4 class="edu-degree">Computer Science (Artificial Intelligence)</h4>
+            <p class="edu-school">
+              Providence College of Engineering – APJ Abdul Kalam Technological University (KTU), Thiruvananthapuram
+            </p>
+            <p class="edu-details">
+              Focusing on core CS fundamentals, algorithms, artificial intelligence, software engineering practices, and
+              hardware integration.
+            </p>
+          </div>
+
+          <!-- Leadership Card -->
+          <div class="glass-card edu-card">
+            <div class="edu-icon icon-purple">
+              <i class="fa-solid fa-hands-holding-circle"></i>
+            </div>
+            <span class="badge-year">Extracurricular</span>
+            <h3>NSS Volunteer</h3>
+            <h4 class="edu-degree">National Service Scheme</h4>
+            <p class="edu-school">Community Service & Youth Leadership Initiatives</p>
+            <p class="edu-details">
+              Contributed actively to community service programs, honing key soft skills including team coordination,
+              public communication, problem solving, and proactive leadership.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT US SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">GET IN TOUCH</span>
+          <h2 class="section-title">Contact Me / Hire Me</h2>
+          <p class="section-lead">
+            Looking for a dedicated software engineering intern or full-time robotics developer? I'd love to connect!
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Details -->
+          <div class="contact-info-card glass-card">
+            <h3>Let's Build Something Great</h3>
+            <p>Feel free to reach out directly via email or LinkedIn for opportunities, collaboration, or technical
+              discussions.</p>
+
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="method-title">Phone / WhatsApp</span>
+                  <a href="tel:+918547191991" class="method-value">+91 8547191991</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="method-title">Email</span>
+                  <a href="mailto:deepurajesh34@gmail.com" class="method-value">deepurajesh34@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-brands fa-linkedin"></i></div>
+                <div>
+                  <span class="method-title">LinkedIn</span>
+                  <a href="https://linkedin.com/in/deepur-717941286" target="_blank" rel="noopener"
+                    class="method-value">linkedin.com/in/deepur-717941286</a>
+                </div>
+              </div>
+
+              <div class="contact-method-item">
+                <div class="method-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="method-title">Location</span>
+                  <span class="method-value">Pathanamthitta, Kerala, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hire-guarantee">
+              <i class="fa-solid fa-shield-halved"></i>
+              <span>Ready for Immediate Onboarding / Remote & On-site Opportunities</span>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card glass-card">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name"><i class="fa-solid fa-user"></i> Your Name</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe" />
+              </div>
+
+              <div class="form-group">
+                <label for="email"><i class="fa-solid fa-envelope"></i> Your Email</label>
+                <input type="email" id="email" name="email" required placeholder="john@company.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="subject"><i class="fa-solid fa-heading"></i> Subject</label>
+                <input type="text" id="subject" name="subject" required
+                  placeholder="Job Opportunity / Project Inquiry" />
+              </div>
+
+              <div class="form-group">
+                <label for="message"><i class="fa-solid fa-comment"></i> Message</label>
+                <textarea id="message" name="message" rows="4" required
+                  placeholder="Hello Deepu, we would love to invite you for an interview..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <i class="fa-solid fa-paper-plane"></i> Send Message / Hire Request
+              </button>
+
+              <div id="form-status" class="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="nav-logo">
+          <i class="fa-solid fa-terminal nav-logo-icon"></i> Deepu R
+        </a>
+        <p>B.Tech CS (AI) & Embedded Systems Developer</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year">2026</span> Deepu R. All rights reserved.</p>
+        <a href="#hero" class="back-to-top" aria-label="Back to top">
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div class="modal" id="project-modal">
+    <div class="modal-content glass-card">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <div id="modal-body">
+        <!-- Content inserted dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME PREVIEW MODAL -->
+  <div class="modal" id="resume-modal">
+    <div class="modal-content glass-card resume-modal-content">
+      <button class="modal-close" id="resume-modal-close">&times;</button>
+      <div class="resume-preview-wrapper">
+        <div class="resume-header">
+          <h2>Deepu R</h2>
+          <p>Pathanamthitta, Kerala, India | +91 8547191991 | deepurajesh34@gmail.com |
+            linkedin.com/in/deepur-717941286</p>
+        </div>
+        <hr class="resume-divider" />
+
+        <div class="resume-section">
+          <h3>SUMMARY</h3>
+          <p>B.Tech Computer Science (AI) student with hands-on experience building embedded systems and robotics
+            projects using C++ and Python. Strong foundation in data structures, algorithms, and problem solving, with a
+            track record of turning concepts into working, tested systems. Seeking Software Engineering
+            internship/full-time opportunities.</p>
+        </div>
+
+        <div class="resume-section">
+          <h3>TECHNICAL SKILLS</h3>
+          <ul>
+            <li><strong>Languages:</strong> C++, Python</li>
+            <li><strong>Core CS:</strong> Data Structures & Algorithms, Problem Solving, Object-Oriented Programming
+            </li>
+            <li><strong>Robotics & Embedded:</strong> Arduino, Sensor Integration, Motor Control Logic, Embedded C</li>
+            <li><strong>Other:</strong> Analytical Thinking, Teamwork, Git/GitHub (version control)</li>
+          </ul>
+        </div>
+
+        <div class="resume-section">
+          <h3>EXPERIENCE</h3>
+          <p><strong>Embedded Systems Intern</strong> — June 2026 – June 2026<br><em>TechMaghi, Kochi, India</em></p>
+          <ul>
+            <li>Built a wireless robotic car using Arduino-based embedded systems and multi-sensor integration for
+              real-time obstacle detection.</li>
+            <li>Programmed motor control logic in C/C++ enabling remote navigation and autonomous obstacle response.
+            </li>
+            <li>Collaborated with a cross-functional technical team to test, debug, and refine the embedded control
+              system, improving reliability of navigation commands.</li>
+          </ul>
+        </div>
+
+        <div class="resume-section">
+          <h3>PROJECTS</h3>
+          <p><strong>Autonomous Soccer Robot</strong> (Personal Project)<br>Designed and implemented movement control
+            and automation logic for a robot capable of coordinated, autonomous play. Engineered real-time coordination
+            between mechanical actuation and control software using C++.</p>
+          <p><strong>Automatic Drawing Machine</strong> (Personal Project - In Progress)<br>Designing a CNC-style
+            machine that converts digital input into precise physical drawings by combining robotics hardware with
+            custom control software. Applying coordinate geometry and motion-planning logic to translate image data into
+            motor movements.</p>
+        </div>
+
+        <div class="resume-section">
+          <h3>EDUCATION</h3>
+          <p><strong>Bachelor of Engineering, Computer Science (Artificial Intelligence)</strong> — Expected
+            2027<br>Providence College of Engineering – APJ Abdul Kalam Technological University (KTU),
+            Thiruvananthapuram</p>
+        </div>
+
+        <div class="resume-section">
+          <h3>LEADERSHIP & EXTRACURRICULAR</h3>
+          <ul>
+            <li><strong>NSS Volunteer</strong> – Contributed to community initiatives, developing leadership, teamwork,
+              and communication skills through hands-on service programs.</li>
+          </ul>
+        </div>
+
+        <div class="resume-actions">
+          <button class="btn btn-primary" onclick="window.print()"><i class="fa-solid fa-print"></i> Print / Save as
+            PDF</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
