@@ -1356,6 +1356,45 @@ body {
 }
 
 /* ==========================================================================
+   CONFIRMATION POPUP
+   ========================================================================== */
+.confirm-modal-content {
+  max-width: 420px;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.confirm-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.confirm-icon {
+  font-size: 3.5rem;
+  color: #00ff87;
+  animation: pop-in 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes pop-in {
+  0% { transform: scale(0); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.confirm-body h3 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--text-main);
+}
+
+.confirm-body p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
    RESPONSIVE BREAKPOINTS
    ========================================================================== */
 @media (max-width: 992px) {

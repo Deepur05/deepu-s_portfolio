@@ -335,6 +335,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const contactForm = document.getElementById('contact-form');
   const formStatus = document.getElementById('form-status');
   const hiddenIframe = document.getElementById('hidden_iframe');
+  const confirmModal = document.getElementById('confirm-modal');
+  const confirmClose = document.getElementById('confirm-modal-close');
+  const confirmOk = document.getElementById('confirm-ok-btn');
 
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
@@ -355,12 +358,20 @@ document.addEventListener('DOMContentLoaded', () => {
         hiddenIframe.onload = () => {
           submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message / Hire Request';
           submitBtn.disabled = false;
-          formStatus.className = 'form-status success';
-          formStatus.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you! Your message has been received. Deepu R will get back to you shortly.';
           contactForm.reset();
-          setTimeout(() => { formStatus.style.display = 'none'; }, 6000);
+          if (confirmModal) confirmModal.classList.add('active');
         };
       }
     });
   }
+
+  if (confirmClose && confirmModal) {
+    confirmClose.addEventListener('click', () => confirmModal.classList.remove('active'));
+  }
+  if (confirmOk && confirmModal) {
+    confirmOk.addEventListener('click', () => confirmModal.classList.remove('active'));
+  }
+  window.addEventListener('click', (e) => {
+    if (e.target === confirmModal) confirmModal.classList.remove('active');
+  });
 });
