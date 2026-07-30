@@ -14,6 +14,7 @@
   --primary-blue: #4facfe;
   --accent-purple: #7f00ff;
   --accent-amber: #ffb703;
+  --accent-green: #00ff87;
   --text-main: #f1f5f9;
   --text-muted: #94a3b8;
   --text-dim: #64748b;
@@ -650,6 +651,7 @@ body {
 .icon-purple { background: rgba(127, 0, 255, 0.12); color: var(--accent-purple); }
 .icon-blue { background: rgba(79, 172, 254, 0.12); color: var(--primary-blue); }
 .icon-amber { background: rgba(255, 183, 3, 0.12); color: var(--accent-amber); }
+.icon-green { background: rgba(0, 255, 135, 0.12); color: var(--accent-green); }
 
 .category-header h3 {
   font-family: var(--font-heading);
