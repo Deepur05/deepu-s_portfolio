@@ -1033,83 +1033,83 @@ body {
    ========================================================================== */
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
 }
 
 .cert-card {
+  padding: 1.8rem;
+  position: relative;
   text-decoration: none;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  padding: 0;
   transition: var(--transition-smooth);
 }
 
 .cert-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   border-color: rgba(0, 242, 254, 0.3);
 }
 
-.cert-img-wrapper {
-  position: relative;
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
-  background: rgba(0, 0, 0, 0.2);
-}
-
-.cert-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.cert-card:hover .cert-img {
-  transform: scale(1.08);
-}
-
-.cert-overlay {
+.cert-badge {
   position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  padding: 0.3rem 0.7rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  color: #ffd700;
+  font-weight: 500;
+}
+
+.cert-icon {
+  width: 54px;
+  height: 54px;
+  background: rgba(0, 242, 254, 0.1);
+  border: 1px solid rgba(0, 242, 254, 0.2);
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
-  color: #fff;
-  font-size: 0.9rem;
-  font-weight: 600;
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  font-size: 1.5rem;
+  color: var(--primary-cyan);
+  margin-bottom: 1rem;
 }
 
-.cert-card:hover .cert-overlay {
-  opacity: 1;
-}
-
-.cert-body {
-  padding: 1.2rem 1.5rem 1.5rem;
-}
-
-.cert-title {
+.cert-card h3 {
   font-family: var(--font-heading);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-main);
   margin-bottom: 0.25rem;
 }
 
 .cert-org {
-  font-size: 0.85rem;
   color: var(--primary-cyan);
-  margin-bottom: 0.3rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
 }
 
-.cert-date {
-  font-size: 0.78rem;
-  color: var(--text-dim);
+.cert-actions {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.cert-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent-purple);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cert-link:hover {
+  color: var(--primary-cyan);
 }
 
 /* ==========================================================================
