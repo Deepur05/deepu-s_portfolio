@@ -367,4 +367,16 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('click', (e) => {
     if (e.target === confirmModal) confirmModal.classList.remove('active');
   });
+
+  // Email links - Gmail web on desktop, default mail app on mobile
+  document.querySelectorAll('a[href^="mailto:"]').forEach(link => {
+    const email = link.getAttribute('href').replace('mailto:', '');
+    link.addEventListener('click', (e) => {
+      const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if (!isMobile) {
+        e.preventDefault();
+        window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, '_blank', 'noopener');
+      }
+    });
+  });
 });
